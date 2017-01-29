@@ -1,0 +1,32 @@
+.header-text{
+	color: #bbeeff;
+	font-size: 1000%;
+	text-shadow: 0em 0em 0.3em #3399ff;
+	transition: 1s;
+}
+.background-dark{
+	background: linear-gradient(#442222, #222244);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+.rice-bowl{
+	width: 90%;
+	margin: 0 5%;
+	box-shadow: 0 0 50px #ff9933;
+	transition: 1s;
+}
+.rice-bowl:hover{
+	cursor: wait;
+	box-shadow: 0 0 100px #55ff00;
+	transform: rotate(180deg);
+	transition: box-shadow 0.25s, transform 1s;
+}
+.mini-rice-bowl{
+	display: inline-block;
+	transition: 0.5s;
+}
+.mini-rice-bowl:hover{
+	cursor: wait;
+	transform: rotate(180deg) translateY(-0.2em);
+	transition: 0.5s;
+}
