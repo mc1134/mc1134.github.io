@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><a href="http://www.w3schools.com/html/default.asp">go here</a><p> </p><a href="http://mrdoob.com/#/146/html_editor">or here</a>
+<title>HTML notes and tutorial</title>
+</head>
+
+
+<body style="background-color:#7FFFD4">
+<h4><a href="index.html">Link to main page</a></h4>
+<br><hr>
+
+<h2>GENERAL INFO</h2>
+<p>This is a paragraph.</p>
+<p>Only stuff in between the &lt;body&gt; and &lt;/body&gt; tags can be seen by people accessing the <abbr title="ie opening using ie">webpage version.</abbr></p>
+<p>HTML is not case sensitive, but to be more compatible with other languages use lowercase when writing the source code.</p>
+<p>HTML documents must start with the &lt;!DOCTYPE&gt; declaration, and everything after that must be encapsulated between &lt;html&gt; and &lt;/html&gt; tags.</p>
+<p title="&gt;.&lt;">To print out the less-than and greater-than signs &lt;&gt;, write: & l t ; (ampersand <b>L</b>ess <b>T</b>han semicolon) for &lt; and & g t ; (ampersand <b>G</b>reater <b>T</b>han semicolon) for &gt;.</p>
+<p style="color:#FF8C00" style="font-family:papyrus" style="font-size:300%" title="huehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehuehue">REMEMBER TO CHECK THE SOURCE CODE!!!!!!!!!!!!</p>
+<br><hr>
+
+<h2>TAGS AND STUFF</h2>
+<p>HTML links use the &lt;a&gt; tag with the "href" attribute:
+<a href="http://www.google.com">This link goes to google.com</a></p>
+<p>Images defined by the &lt;img&gt; tag using "src" to define the source, "alt" to define alternative text if the image does not load, and "width" and "height" as size attributes:</p>
+<img title="MROW" src="http://www.pageresource.com/wallpapers/wallpaper/cats-cute-cat-animal-cute-grass-photo.jpg" alt="alternative text; this is a cat" width="400" height="300">
+<p>Some HTML elements do not have an end tag, like &lt;br&gt;. &lt;br&gt; defines a line break:</p>
+<br>
+<p>oho, extra line above</p>
+<p>Close all HTML elements using &lt;/(element name)&gt; so that the document can be read by XML parsers (for unknown and specialized reasons)</p>
+<br><hr>
+
+<h2>ATTRIBUTES</h2>
+<p>These provide additional information about an element</p>
+<p>"lang" defines the language of the HTML document and is important for accessibility application and search engines. Provide this information in the &lt;html&gt; tag: &lt;html lang="aa-RR"&gt;. The "aa" corresponds to the language, and the RR corresponds to the region or dialect of the language</p>
+<p>"title" is different from the &lt;title&gt; tag; "title" as an attribute is used like &lt;p title="blahblah"&gt;</p>
+<p title="How to use attributes">And that is how you use the "title" attribute</p>
+<p title="XKCD COMICS"><a href="xkcd.com">A great example of the use of the "title" attribute is...</a></p>
+<p>We've already seen the "href" attribute; it defines the link address along with the &lt;a&gt; tag: <a href="http://what-if.xkcd.com/1">ridiculous situations</a></p>
+<p>and also the attributes that go along with the &lt;img&gt; tag ("src", "alt", "width", and "height")</p>
+<p>As a rule of thumb, always use lowercase attributes and always quote attributes, like &lt;a href="this stuff"&gt;. Technically, &lt;a href=this stuff&gt; is acceptable, but in some cases the space will separate what you want to say.</p>
+<p>If you want to use "double quotes" in an attribute, use single quotes for the attribute - &lt;p title='He "typed" it'&gt; - and vice versa - &lt;p title="He 'typed' it"&gt;. Try not to blow your mind by trying to use both quotes and apostrophes in an attribute that requires quotes.</p>
+<a href="http://www.w3schools.com/tags/default.asp">A somewhat complete guide of the list of elements used in HTML</a>
+<br><hr>
+
+<h2>HEADINGS</h2>
+<h1>Headings go from &lt;h1&gt; to &lt;h6&gt;; the numbers determine the size of the heading, where h1>h2>h3>h4>h5>h6. This is a size 1 heading</h1>
+<h2>Size 2</h2>
+<h3>Size 3</h3>
+<h4>Size 4</h4>
+<h5>Size 5</h5>
+<h6>Size 6</h6>
+<p>Regular paragraph font size for comparison</p>
+<p>The &lt;hr&gt; tag creates a horizontal line on the HTML page. Like &lt;br&gt;, this tag does not need to be closed:</p>
+<hr>
+<p>The &lt;head&gt; tag at the beginning of a document is not a heading. This tag contains metadata for the document and is always placed (and closed) between the &lt;html&gt; and &lt;body&gt; tags.</p>
+<p>The &lt;title&gt; tag defines the title of the html document. The title appears on the tab of an internet window like IE, Firefox, and Google Chrome.</p>
+<p>The &lt;meta&gt; tag basically defines certain metadata about the document, including character set and other info.</p>
+<h3 title='scroll down to "HTML Styles" for more info'>HTML Styles and Meta Elements</h3>
+<p>The &lt;style&gt; element is used to define internal CSS style sheets, whereas the &lt;link&gt; element is used to define external CSS style sheets.</p>
+<br><hr>
+
+<h2>PARAGRAPHS</h2>
+<p>While in the text document there may be much whitespace, the HTML will display any whitespace as one space.</p>
+<p>For example:
+This sentence has a return key before it and a bunch of spaces between these letters --> X            X</p>
+<p>Also, the display will vary between different sized windows and different browsers.</p>
+<p>Even if the end tag &lt;/p&gt; is forgotten (as in here), most browsers will still display the code correctly.
+<p>&lt;br&gt; defines a line break</p>
+<p>To avoid the problem of converting all whitespace into one space, use the &lt;pre&gt; tag (which means pre-formatted in the document) so that the display will show the exact format in the source code.</p>
+<pre>For example:
+This sentence has a return key before it and a bunch of spaces between these letters --> X            X (and the font also happens to be Lucida Console)</pre>
+<br><hr>
+
+<h2>HTML STYLES</h2>
+<p>The default style for an HTML document is white background, black text with 12 pt. Times New Roman font (for paragraph displays)</p>
+<p>Use the "style" attribute in the &lt;body&gt; tag: &lt;body style="background-color:lightgrey"&gt;</p>
+<p>The background color of this document is aquamarine. The syntax is: &lt;body title="background-color:aquamarine"&gt;</p>
+<p>In general, the syntax for using the "style" attribute is: style="property:value". Both of these are CSS values.</p>
+<p>To change the color of the text, use the syntax: style="color:XXXXX" where "XXXXX" is a color.</p>
+<p style="color:red">This text is red.</p>
+<p>To change the font of the text, use the syntax: style="font-family:XXXXX" where "XXXXX" is a font.</p>
+<p style="font-family:calibri">This font is Calibri.</p>
+<p>To change the size of the text, use the syntax: style="font-size:XXX%" where "XXX" is a percentage (100% is normal size)</p>
+<p style="font-size:200%" title="Don't believe me? Get a ruler.">This font is twice as big as normal.</p>
+<p>To change the alignment of the text, use the syntax: style="text-align:XXXXX" where "XXXXX" is an alignment (left, center, right).</p>
+<p style="text-align:right">This text is aligned to the right.</p>
+<h3 style="color:green" style="font-family:courier" style="font-size:150%" style="text-align:center">Headings, as well as paragraphs, can also have colored text, different fonts, different sized text, and different alignments.</h3>
+<pre style="font-family:georgia" style="font-size:200%">
+Style Attributes:		Description:
+background-color		Changes the background color of the text. Only usable in the &lt;body&gt; tag.
+color				Changes the color of the text.
+font-family			Changes the font of the text.
+font-size 			Changes the size of the text.
+text-align			Changes the alignment of the text.
+</pre>
+<br><hr>
+
+<h2>HTML TEXT FORMATTING</h2>
+<p>Text can be made to be bold, important, italic, emphasized, marked, small, deleted, inserted, subscripts, superscripts, and more.</p>
+<p>Text formatting elements are tags, such as &lt;p&gt;&lt;b&gt;bolded text&lt;/b&gt;not bolded text&lt;/p&gt;</p>
+<p>not bolded <b>bolded</b></p>
+<p>The &lt;strong&gt; tag is the same as the &lt;b&gt; tag except it adds "importance" to the text: <strong>Strong text</strong>, <b>bold text</b></p>
+<p>The &lt;i&gt; and &lt;em&gt; (italics and emphasized) tags are all italics, with &lt;em&gt; having more "importance" than italics: <i>Italics</i>, <em>Emphasized</em></p>
+<p>"Small formatting" defines "small" text: use the &lt;small&gt; tag: <small>smaller</small>, bigger</p>
+<p title="Marked text actually looks like yellow highlighter marks over the text.">"Marked formatting" defines marked or highlighted text: use the &lt;mark&gt; tag: <mark>marked text</mark> (may not show up in some HTML versions)</p>
+<p>"Deleted" text is text with a single strikethrough: use the &lt;del&gt; tag: I like <del>blue</del> red</p>
+<p>"Inserted" text is underlined text: use the &lt;ins&gt; tag: I <ins>like</ins> red</p>
+<p>Subscript formatting uses the &lt;sub&gt; tag: y<sub>0</sub>=2</p>
+<p>Superscript formatting uses the &lt;sup&gt; tag: y'=x<sup>2</sup>y<sup>3</sup>-e<sup>x</sup>cos(y)</p>
+<pre style="font-family:georgia" style="font-size:150%">
+Text Formatting Elements:		Description:
+<b>&lt;b&gt;</b>						Bolded text
+<em>&lt;em&gt;</em>						Emphasized (italics) text
+<i>&lt;i&gt;</i>						Italic text
+<small>&lt;small&gt;</small>					Small text
+<strong>&lt;strong&gt;</strong>					Important (bolded) text
+<sub>&lt;sub&gt;</sub>						Subscripted text
+<sup>&lt;sup&gt;</sup>						Superscripted text
+<ins>&lt;ins&gt;</ins>						Inserted (underlined) text
+<del>&lt;del&gt;</del>						Deleted (single strikethrough) text
+<mark>&lt;mark&gt;</mark>					Marked/Highlighted text
+</pre>
+<br><hr>
+
+<h2>HTML QUOTATION AND CITATION ELEMENTS</h2>
+<p>The &lt;q&gt; tag produces a <q title="but seriously, it's a short quote">short</q> quote, producing quotes around the &lt;q&gt; elements</p>
+<p>The &lt;blockquote&gt; tag quotes a block of stuff and tabs it; kind of like how &lt;p&gt; and &lt;pre&gt; are related:</p>
+<blockquote title="remember, whitespace in the document counts as one space except with the &lt;pre&gt; tag">
+Jack and Jill	
+Went up the hill	
+To fetch a pail of water;</blockquote>
+<p>Use the &lt;abbr&gt; tag to abbreviate an acronym (usually with a title describing the abbreviation): &lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt;<br>
+Essentially the &lt;abbr&gt; tag takes a section of the paragraph text and applies the "title" attribute to only that section of text<br>
+The <abbr title="World Health Organization">WHO</abbr> is an organization of the United Nations.</br></p>
+<p>Use the &lt;address&gt; tag to define contact information in a document, usually displaying the information in italics: &lt;address&gt;Written by Person. Phone number: 000-000-0000&lt;/address<&gt;<br>
+<address>Written by Person. Phone number: 000-000-0000</address></br></p>
+<p>Use the &lt;cite&gt; tag to cite a work; also italicizes the cited segment (The Scream): &lt;p&gt;&lt;cite&gt;The Scream&lt;/cite&gt; by Edward Munch.&lt;/p&gt;<br>
+<img title="The Scream" src="http://uploads1.wikiart.org/images/edvard-munch/the-scream-1893(1).jpg" alt="The Scream" width="512" height="384"><br>
+<cite>The Scream</cite> by Edward Munch</br></p>
+<p>Use the &lt;dfn&gt; tag to define a term. The &lt;dfn&gt; tag has many syntactical usages:</p>
+<ul><li>If the &lt;dfn&gt; tag is used on its own, the term is only italicized (it is still italicized in all cases): <dfn>PI</dfn> is 3.14159265358979323846264338327950288419716939937510582097494459 more or less</li>
+<li>If the title attribute in &lt;dfn&gt; is present, then the item inside the tags is italicized and displays the title when the cursor hovers over it: &lt;dfn title="3.141592654"&gt;PI&lt;/dfn&gt;</li>
+<li>If the title attribute in &lt;abbr&gt; is present and &lt;abbr&gt; is encapsulated in the &lt;dfn&gt; tags, then the item inside the tags does the exact same thing as the previous syntax &lt;dfn title=""&gt;&lt;/dfn&gt;, except in this case the writer of the HTML document would be specifying an abbreviation instead of just a definition</li></ul>
+<br><hr>
+
+<h2>MISCELLANEOUS ELEMENTS IN HTML</h2>
+<p>To add a comment in HTML, use the syntax &lt;!-- ... --&gt;, where the ellipses represent where your comment in the HTML code go<br>
+Comments can also be used conditionally to define code that is only to be used in certain cases (ie the code remains a comment if the if statement returns false):<br>
+&lt;!--[if IE 8]&gt;<br>
+    .... some HTML here ....<br>
+&lt;![endif]--&gt;</br></p>
+<!-- THIS IS A COMMENT -->
+<!-- ONLY WITH ACCESS TO THE DOCUMENT CAN ONE VIEW SUCH COMMENTS -->
+<!-- HTML-CSS STANDS FOR HYPERTEXT MARKUP LANGUAGE USING CASCADING STYLE SHEETS -->
+<p>The &lt;kbd&gt;, &lt;samp&gt;, and &lt;code&gt; tags are built-in font styles designed to make your <kbd>text look</kbd> <samp>like</samp> <code>code</code><br>
+Still, all three font styles look the same</br></p>
+<p>Use the &lt;var&gt; tag to format the letter/word as a variable: <var>E = mc<sup>2</sup></var></p>
+<br><hr><hr>
+
+<h2>CSS</h2>
+
+
+
+
+
+
+<br><br><br>
+</body>
+
+</html>
