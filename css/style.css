@@ -9,6 +9,11 @@
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 }
+.background-light{
+	background: linear-gradient(#ddbbbb, #bbbbdd);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
 .rice-bowl{
 	width: 90%;
 	margin: 0 5%;
