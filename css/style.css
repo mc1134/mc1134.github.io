@@ -1,20 +1,6 @@
-.header-text{
-	color: #bbeeff;
-	font-size: 200%;
-	text-shadow: 0em 0em 0.3em #3399ff;
-	transition: 1s;
-}
-.header-fun-text{
-	color: #bbeeff;
-	font-size: 1000%;
-	text-shadow: 0em 0em 0.3em #3399ff;
-	transition: 1s;
-}
-.blue-text{
-	color: #bbeeff;
-	font-size: 150%;
-	text-shadow; 0em 0em 0.3em #3399ff;
-	transition: 1s;
+@import url('https://fonts.googleapis.com/css?family=Catamaran');
+body{
+	font-family: "Catamaran";
 }
 .background-dark{
 	background: linear-gradient(#442222, #222244);
@@ -26,13 +12,33 @@
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 }
-.pic-blue-glow{
+.header-text{
+	color: #bbeeff;
+	font-size: 200%;
+	text-shadow: 0em 0em 0.3em #3399ff;
+	transition: 0.25s;
+}
+.header-text:hover{
+	text-shadow: 0em 0em 0.5em #eeee00;
+	transition: 1s;
+}
+.header-big-text{
+	color: #bbeeff;
+	font-size: 600%;
+	text-shadow: 0em 0em 0.3em #3399ff;
+	transition: 1s;
+}
+.header-big-text:hover{
+	text-shadow: 0em 0em 0.5em #eeee00;
+	transition: 4s;
+}
+.pic-yellow-glow{
 	width: 90%;
 	margin: 0 5%;
 	box-shadow: 0 0 50px #3399ff;
 	transition: 0.5s;
 }
-.pic-blue-glow:hover{
+.pic-yellow-glow:hover{
 	box-shadow: 0 0 100px #eeee00;
 	transition: 2s;
 }
