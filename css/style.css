@@ -1,7 +1,19 @@
 .header-text{
 	color: #bbeeff;
+	font-size: 200%;
+	text-shadow: 0em 0em 0.3em #3399ff;
+	transition: 1s;
+}
+.header-fun-text{
+	color: #bbeeff;
 	font-size: 1000%;
 	text-shadow: 0em 0em 0.3em #3399ff;
+	transition: 1s;
+}
+.blue-text{
+	color: #bbeeff;
+	font-size: 150%;
+	text-shadow; 0em 0em 0.3em #3399ff;
 	transition: 1s;
 }
 .background-dark{
@@ -14,24 +26,34 @@
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 }
-.rice-bowl{
+.pic-blue-glow{
 	width: 90%;
 	margin: 0 5%;
-	box-shadow: 0 0 50px #ff9933;
-	transition: 1s;
+	box-shadow: 0 0 50px #3399ff;
+	transition: 0.5s;
 }
-.rice-bowl:hover{
-	cursor: wait;
-	box-shadow: 0 0 100px #55ff00;
-	transform: rotate(180deg);
-	transition: box-shadow 0.25s, transform 1s;
+.pic-blue-glow:hover{
+	box-shadow: 0 0 100px #eeee00;
+	transition: 2s;
 }
-.mini-rice-bowl{
+.text-yellow-glow{
+	cursor: default;
 	display: inline-block;
 	transition: 0.5s;
 }
-.mini-rice-bowl:hover{
-	cursor: wait;
-	transform: rotate(180deg) translateY(-0.2em);
-	transition: 0.5s;
+.text-yellow-glow:hover{
+	text-shadow: 0em 0em 0.5em #eeee00;
+	transition: 2s;
+}
+a{
+	color: #bbeeff;
+}
+a:link{
+	color: #bbeeff;
+}
+a:visited{
+	color: #eeee00;
+}
+a:hover{
+	color: #3399ff;
 }
