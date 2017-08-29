@@ -1,6 +1,6 @@
 This is the website of Alchemic Hen.
 
-It contains nothing.
+It contains personal projects and serves as HTML experience for the owner.
 
 Have a nice day.
 
