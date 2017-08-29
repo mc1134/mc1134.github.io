@@ -61,5 +61,36 @@ a:visited{
 	color: #eeee00;
 }
 a:hover{
-	color: #3399ff;
+	color: #ff3399;
+}
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333333;
+}
+li{
+	float: left;
+}
+li a{
+	display: block;
+	color: #bbeeff;
+	text-shadow: 0em 0em 0.2em #bbeeff;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	transition: 0.5s;
+}
+li a:hover{
+	color: #bbeeff;
+	text-shadow: 0em 0em 0.4em #3399ff;
+	background-color: #777700;
+	transition: 2s;
+}
+li a:visited{
+	color: #bbeeff;
+	text-shadow: 0em 0em 0.4em #3399ff;
+	background-color: #777700;
+	transition: 2s;
 }
