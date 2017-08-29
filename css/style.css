@@ -22,6 +22,16 @@ body{
 	text-shadow: 0em 0em 0.5em #eeee00;
 	transition: 1s;
 }
+.header-medium-text{
+	color: #bbeeff;
+	font-size: 300%;
+	text-shadow: 0em 0em 0.3em #3399ff;
+	transition: 0.5s;
+}
+.header-medium-text:hover{
+	text-shadow: 0em 0em 0.5em #eeee00;
+	transition: 2s;
+}
 .header-big-text{
 	color: #bbeeff;
 	font-size: 600%;
@@ -42,7 +52,18 @@ body{
 	box-shadow: 0 0 100px #eeee00;
 	transition: 2s;
 }
+.text{
+	color: #bbeeff;
+	font-size: 100%;
+	text-shadow: 0em 0em 0.3em #3399ff;
+	transition: 0.25s;
+}
+.text:hover{
+	text-shadow: 0em 0em 0.5em #eeee00;
+	transition: 1s;
+}
 .text-yellow-glow{
+	width: 100%;
 	cursor: default;
 	display: inline-block;
 	transition: 0.5s;
