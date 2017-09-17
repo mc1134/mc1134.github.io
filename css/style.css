@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Catamaran');
 body{
-	margin: 10px 20px;
+	margin: 2px 20px;
 	font-family: "Catamaran";
 }
 .background-dark{
@@ -17,7 +17,7 @@ body{
 	color: #bbeeff;
 	font-size: 200%;
 	text-shadow: 0em 0em 0.3em #3399ff;
-	transition: 0.25s;
+	transition: 0.5s;
 }
 .header-text:hover{
 	text-shadow: 0em 0em 0.5em #eeee00;
@@ -31,17 +31,17 @@ body{
 }
 .header-medium-text:hover{
 	text-shadow: 0em 0em 0.5em #eeee00;
-	transition: 2s;
+	transition: 1s;
 }
 .header-big-text{
 	color: #bbeeff;
 	font-size: 600%;
 	text-shadow: 0em 0em 0.3em #3399ff;
-	transition: 1s;
+	transition: 0.5s;
 }
 .header-big-text:hover{
 	text-shadow: 0em 0em 0.5em #eeee00;
-	transition: 4s;
+	transition: 2s;
 }
 .nav-center{
 	text-align: center;
@@ -59,6 +59,9 @@ body{
 	width: 100%;
 	list-style: none;
 }
+.not-found{
+	background-image: url(../images/image404.png);
+}
 .pic-yellow-glow{
 	width: 90%;
 	margin: 0 5%;
@@ -69,25 +72,69 @@ body{
 	box-shadow: 0 0 100px #eeee00;
 	transition: 2s;
 }
+.project-3D{
+	margin: 50px 80px;
+	height: 6.75em;
+	width: 12em;
+}
+.project-boxes{
+	margin: 0px;
+	align-content: center;
+}
+.project-button{
+	margin: 30px 30px;
+	height: 6.75em;
+	width: 12em;
+}
+.project-button:hover{
+	background-color: #3399ff;
+	transition: 0.1s;
+}
+.project-button:active{
+	background-color: #bbeeff;
+	transition: 0.02s;
+}
+.project-3D, .project-button{
+	background-color: #2277ff;
+	border-radius: 6px;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	font-size: 200%;
+	vertical-align: 50%;
+	border: auto;
+	padding: auto;
+	color: #ffffff;
+	opacity: 0%;
+	transition: 0.05s;
+}
+.test-image{
+	background-image: url(../images/torus-knot_192x108_25fps.gif);
+}
+.not-found, .project-image, .test-image{
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
 .text{
 	color: #bbeeff;
 	font-size: 100%;
 	text-shadow: 0em 0em 0.3em #3399ff;
-	transition: 0.25s;
+	transition: 0.5s;
 }
 .text:hover{
 	text-shadow: 0em 0em 0.5em #eeee00;
 	transition: 1s;
 }
-.text-yellow-glow{
-	width: 100%;
-	cursor: default;
-	display: inline-block;
+.text-large{
+	color: #bbeeff;
+	font-size: 150%;
+	text-shadow: 0em 0em 0.3em #3399ff;
 	transition: 0.5s;
 }
-.text-yellow-glow:hover{
+.text-large:hover{
 	text-shadow: 0em 0em 0.5em #eeee00;
-	transition: 2s;
+	transition: 1s;
 }
 a{
 	color: #bbeeff;
