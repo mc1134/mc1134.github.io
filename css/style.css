@@ -60,7 +60,7 @@ body{
 	list-style: none;
 }
 .not-found{
-	background-image: url(../images/image404.png);
+	background-image: url(../images/imagemissing.png);
 }
 .pic-yellow-glow{
 	width: 90%;
