@@ -153,17 +153,19 @@ body{
 
 /* Custom styles for common HTML tags. */
 
-a{
+a, a:link{
 	color: #bbeeff;
-}
-a:link{
-	color: #bbeeff;
+	/* text-shadow: 0em 0em 0.3em #eeee00; */
+	transition: 0.5s;
 }
 a:visited{
 	color: #eeee00;
+	/* text-shadow: 0em 0em 0.3em #ff3399; */
 }
 a:hover{
 	color: #ff3399;
+	/* text-shadow: 0em 0em 0.3em #3399ff; */
+	transition: 1s;
 }
 li{
 	float: left;
