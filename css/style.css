@@ -51,6 +51,9 @@ body{
 	display: inline-block;
 	background-color: #333333;
 }
+.spaced-out{
+  letter-spacing: 0.5em;
+}
 
 /* Styles for navigation bars. */
 
