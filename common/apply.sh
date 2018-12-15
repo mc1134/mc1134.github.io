@@ -96,7 +96,8 @@ do
 	shortFile=$(echo "$file" | sed 's|'$toUpdate'|~|')
 	for begend in "${common[@]}"
 	do
-		applyer=$begend$fileType
+		applyer="$toUpdate/$notUpdate/$begend$fileType"
+		shortApplyer="~/$notUpdate/$begend$fileType"
 		# extract C as firstline and C' as lastline
 		firstline=$(head -n1 "$applyer")
 		lastline=$(tail -n1 "$applyer")
@@ -121,10 +122,10 @@ do
 			#TODO
 		# print summary
 		if [ -z "$er" ]; then
-			echo ">>SUCCESS FOR FILE <$shortFile> APPLYING <$applyer>"
+			echo ">>SUCCESS FOR FILE <$shortFile> APPLYING <$shortApplyer>"
 			# overwrite lines $lineOfFirst-$lineOfLast for $file with $applyer
 			#TODO
-		else echo ">>FAILURE FOR FILE <$shortFile> APPLYING <$applyer>; ERROR FLAG(S) $er"
+		else echo ">>FAILURE FOR FILE <$shortFile> APPLYING <$shortApplyer>; ERROR FLAG(S) $er"
 		fi
 		echo -e ">>>>firstnum: $lineOfFirst; lastnum: $lineOfLast\n"
 	done
