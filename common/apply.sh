@@ -65,7 +65,7 @@ done
 # Printing information and user confirmation
 echo -e "Home directory: $toUpdate"
 echo -e "File type to update: $fileType"
-echo -e "Applyer files: $common"
+echo -e "Applyer files: ${common[@]}"
 echo -e "Filter word when locating applyee files: $notUpdate\n"
 
 read -n 1 -s -p "Update files? Type 'y' if yes, else any other key to cancel" input
@@ -126,7 +126,7 @@ do
 			# overwrite lines $lineOfFirst-$lineOfLast for $file with $applyer
 			#TODO
 			sed -i """$lineOfFirst,$lineOfLast d""" "$file"
-			sed -i """(( $lineOfFirst-1 ))r $applyer""" "$file"
+			sed -i """$(( $lineOfFirst-1 ))r $applyer""" "$file"
 			# sed -i "11,23d" test2.txt
 			# sed -i "10r header.html" test2.txt
 		else echo ">>FAILURE FOR FILE <$shortFile> APPLYING <$shortApplyer>; ERROR FLAG(S) $er"
