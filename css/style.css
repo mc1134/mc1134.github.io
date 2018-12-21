@@ -83,11 +83,6 @@ body{
 
 /* Styles for displaying project information. */
 
-.project-3D, .project-Phys, .project-B2M{
-	margin: 50px 70px;
-	height: 6.75em;
-	width: 12em;
-}
 .project-boxes{
 	margin: 0px;
 	align-content: center;
