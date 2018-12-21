@@ -125,12 +125,10 @@ do
 			echo ">>SUCCESS FOR FILE <$shortFile> APPLYING <$shortApplyer>"
 			# overwrite lines $lineOfFirst-$lineOfLast for $file with $applyer
 			#TODO
-			#sed -i """$lineOfFirst,$lineOfLastd""" "$applyee"
-			#sed -i """r "$applyer"""
-			#sed """$lineOfFirst,$lineOfLast d""" "$file"
-			#sed -i """(( $lineOfFirst-1 ))r $applyer""" "$file"
-			sed -i "11,23d" test2.txt
-			sed -i "10r header.html" test2.txt
+			sed -i """$lineOfFirst,$lineOfLast d""" "$file"
+			sed -i """(( $lineOfFirst-1 ))r $applyer""" "$file"
+			# sed -i "11,23d" test2.txt
+			# sed -i "10r header.html" test2.txt
 		else echo ">>FAILURE FOR FILE <$shortFile> APPLYING <$shortApplyer>; ERROR FLAG(S) $er"
 		fi
 		echo -e ">>>>firstnum: $lineOfFirst; lastnum: $lineOfLast\n"
