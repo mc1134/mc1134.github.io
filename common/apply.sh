@@ -84,13 +84,15 @@ echo -e "$shortApplyee\n"
 
 # Replacement step
 # pseudocode:
-# for each applyee file A
-# for each applyer file B with begin/end string C..C'
-# replace instance of C..C' in A with B
+# 	for each applyee file A
+# 	for each applyer file B with begin/end string C..C'
+# 	replace instance of C,,C' in A with C..C' in B
 # Error cases:
-# (1) If no read/write privileges for A or B, skip file A or B
+# (0) If no memory (rare), end program
+# (1) If no read/write privileges for applyee A or B, skip file A or B
 # (2) If C, C', or both are missing, abort edit and write
-# (3) If no space (rare), end program
+# handle error 0 (no memory)
+	# TODO
 while read -a file
 do
 	shortFile=$(echo "$file" | sed 's|'$toUpdate'|~|')
@@ -118,17 +120,14 @@ do
 		if [ -z "$lineOfFirst" ] || [ -z "$lineOfLast" ]; then
 			er="$er 2"
 		fi
-		# handle error 3 (no memory)
-			#TODO
 		# print summary
 		if [ -z "$er" ]; then
 			echo ">>SUCCESS FOR FILE <$shortFile> APPLYING <$shortApplyer>"
 			# overwrite lines $lineOfFirst-$lineOfLast for $file with $applyer
-			#TODO
 			sed -i """$lineOfFirst,$lineOfLast d""" "$file"
 			sed -i """$(( $lineOfFirst-1 ))r $applyer""" "$file"
 			# sed -i "11,23d" test2.txt
-			# sed -i "10r header.html" test2.txt
+			# sed -i "$(( 11-1 ))r header.html" test2.txt
 		else echo ">>FAILURE FOR FILE <$shortFile> APPLYING <$shortApplyer>; ERROR FLAG(S) $er"
 		fi
 		echo -e ">>>>firstnum: $lineOfFirst; lastnum: $lineOfLast\n"
